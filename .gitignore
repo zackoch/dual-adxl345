@@ -1,0 +1,6 @@
+venv/
+.env
+notes*.*
+*.bak
+.lgd*
+__pycache__/
