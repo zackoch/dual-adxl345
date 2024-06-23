@@ -4,7 +4,7 @@
 # install git and python3-dev
 sudo apt-get install python3-dev git
 # clone repo
-git clone https://github.com/zackoch/Dual-ADXL345.git
+git clone https://github.com/zackoch/dual-adxl345.git
 # create virtual environment
 python3 -m venv venv
 # activate venv
