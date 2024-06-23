@@ -15,7 +15,7 @@ pip -r requirements.txt
 python main.py
 ```
 
-### Connections to Raspberry Pi
+### Connections to Raspberry Pi 5
 
 #### ADXL345_0
 
