@@ -15,6 +15,7 @@ REG_DEVID = 0x00
 REG_POWER_CTL = 0x2D
 REG_DATAX0 = 0x32
 REG_DATA_RATE = 0x2C
+REG_DATA_FORMAT = 0x31
 
 db_name = f"./data/ride_{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.db"
 
@@ -45,6 +46,7 @@ def init_adxl345(spi, data_rate):
         raise Exception(f"ADXL345 not connected, got DEVID: {devid:#04x}")
     write_register(spi, REG_POWER_CTL, 0x08)
     write_register(spi, REG_DATA_RATE, data_rate)
+    write_register(spi, REG_DATA_FORMAT, 0b00001100)
 
 def convert_to_g(raw_value):
     return raw_value * 0.004
